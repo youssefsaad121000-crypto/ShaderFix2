@@ -1,1 +1,25 @@
-
+{
+  "schemaVersion": 1,
+  "id": "shaderfix",
+  "version": "${version}",
+  "name": "ShaderFix",
+  "description": "Shader compatibility fixes for Mojolauncher + Iris.",
+  "authors": [
+    "youssefsaad121000-crypto"
+  ],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.shaderfix.ShaderFixClient"
+    ]
+  },
+  "mixins": [
+    "shaderfix.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "minecraft": "1.21.11",
+    "fabric-api": "*"
+  }
+}
